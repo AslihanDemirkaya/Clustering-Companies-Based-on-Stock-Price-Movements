@@ -1,5 +1,5 @@
 ---
-title: "Clustring Companies Based Stock Price Movements"
+title: "Clustering Companies Based on Stock Price Movements"
 author: "ASLIHAN_DEMIRKAYA"
 output: html_document
 ---
