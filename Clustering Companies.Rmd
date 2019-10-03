@@ -1,7 +1,10 @@
 ---
 title: "Clustering Companies Based on Stock Price Movements"
 author: "ASLIHAN_DEMIRKAYA"
-output: html_document
+output: 
+ md_document:
+    toc: no
+    variant: markdown_github
 ---
 
 ## Introduction
@@ -324,6 +327,20 @@ kable(d)
 
 Looking at the table, we can tell that K-Means did a fair job in clustering. For instance, 155 out of 215 data points that belong to Real Estate Investment Trusts were put in one cluster. 211 out of 328 of Major Banks were put in one cluster. 
 
+Besides the table, we are going to use `rand.index` function from the package `fossil`. This function is used to measure to compare the similarity of two clustering outcomes. Here we will use this function to compare the true labels and the K-means labels. Note that this function does not accept the industry names, so we change them to numerics as follows:
+
+
+```{r}
+library(fossil)
+stocks_daily_return$industry_numeric<-as.factor(stocks_daily_return$industry)
+stocks_daily_return$industry_numeric<-as.numeric(stocks_daily_return$industry_numeric)
+rand.index(stocks_daily_return$industry_numeric,km.out$cluster)
+```
+
+
+
+
+
 ### Elbow Method
 Even though we picked the number of clusters as 11, it is worth trying to see if there is any optimal value for the number of clusters. Below is the code that tries for the number of clusters that starts from 2 and goes up to 15 by increasing the number by 1 at each run.
 
@@ -386,5 +403,13 @@ kable(d)
 
 By looking at this table, we can conclude that hierarchial clustering did not perform well, since most of the data points were assigned to one cluster.
 
+Let's use the same function we used for K-means clustering to see its performance.
 
+```{r}
+library(fossil)
+rand.index(stocks_daily_return$industry_numeric,cut_avg)
+```
+
+
+We can conclude that K-means (with rand.index= 0.839407) did perform better than hierarchial clustering (with rand.index= 0.535644).
 

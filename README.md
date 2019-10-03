@@ -435,37 +435,37 @@ tsne <- Rtsne(rem_cat[,-1], dims = 2, perplexity=30, verbose=TRUE, max_iter = 15
     ## Building tree...
     ## Done in 0.48 seconds (sparsity = 0.075540)!
     ## Learning embedding...
-    ## Iteration 50: error is 74.419154 (50 iterations in 0.42 seconds)
-    ## Iteration 100: error is 73.078371 (50 iterations in 0.48 seconds)
-    ## Iteration 150: error is 72.873623 (50 iterations in 0.35 seconds)
-    ## Iteration 200: error is 72.872102 (50 iterations in 0.33 seconds)
-    ## Iteration 250: error is 72.873576 (50 iterations in 0.36 seconds)
-    ## Iteration 300: error is 2.045412 (50 iterations in 0.30 seconds)
-    ## Iteration 350: error is 1.892801 (50 iterations in 0.29 seconds)
-    ## Iteration 400: error is 1.843611 (50 iterations in 0.28 seconds)
-    ## Iteration 450: error is 1.821175 (50 iterations in 0.29 seconds)
-    ## Iteration 500: error is 1.808408 (50 iterations in 0.29 seconds)
-    ## Iteration 550: error is 1.801800 (50 iterations in 0.28 seconds)
-    ## Iteration 600: error is 1.794260 (50 iterations in 0.28 seconds)
-    ## Iteration 650: error is 1.788690 (50 iterations in 0.29 seconds)
-    ## Iteration 700: error is 1.785251 (50 iterations in 0.29 seconds)
-    ## Iteration 750: error is 1.782374 (50 iterations in 0.29 seconds)
-    ## Iteration 800: error is 1.780740 (50 iterations in 0.28 seconds)
-    ## Iteration 850: error is 1.779269 (50 iterations in 0.29 seconds)
-    ## Iteration 900: error is 1.778000 (50 iterations in 0.29 seconds)
-    ## Iteration 950: error is 1.776761 (50 iterations in 0.28 seconds)
-    ## Iteration 1000: error is 1.775608 (50 iterations in 0.28 seconds)
-    ## Iteration 1050: error is 1.774429 (50 iterations in 0.28 seconds)
-    ## Iteration 1100: error is 1.773303 (50 iterations in 0.28 seconds)
-    ## Iteration 1150: error is 1.772486 (50 iterations in 0.29 seconds)
-    ## Iteration 1200: error is 1.771387 (50 iterations in 0.29 seconds)
-    ## Iteration 1250: error is 1.769955 (50 iterations in 0.29 seconds)
-    ## Iteration 1300: error is 1.769283 (50 iterations in 0.29 seconds)
-    ## Iteration 1350: error is 1.768525 (50 iterations in 0.29 seconds)
-    ## Iteration 1400: error is 1.767814 (50 iterations in 0.29 seconds)
-    ## Iteration 1450: error is 1.766926 (50 iterations in 0.29 seconds)
-    ## Iteration 1500: error is 1.765920 (50 iterations in 0.29 seconds)
-    ## Fitting performed in 9.15 seconds.
+    ## Iteration 50: error is 74.418569 (50 iterations in 0.47 seconds)
+    ## Iteration 100: error is 72.982585 (50 iterations in 0.40 seconds)
+    ## Iteration 150: error is 72.870435 (50 iterations in 0.33 seconds)
+    ## Iteration 200: error is 72.872142 (50 iterations in 0.33 seconds)
+    ## Iteration 250: error is 72.873033 (50 iterations in 0.33 seconds)
+    ## Iteration 300: error is 2.029519 (50 iterations in 0.30 seconds)
+    ## Iteration 350: error is 1.879221 (50 iterations in 0.29 seconds)
+    ## Iteration 400: error is 1.826001 (50 iterations in 0.29 seconds)
+    ## Iteration 450: error is 1.803834 (50 iterations in 0.29 seconds)
+    ## Iteration 500: error is 1.794904 (50 iterations in 0.29 seconds)
+    ## Iteration 550: error is 1.786855 (50 iterations in 0.29 seconds)
+    ## Iteration 600: error is 1.779299 (50 iterations in 0.30 seconds)
+    ## Iteration 650: error is 1.773653 (50 iterations in 0.29 seconds)
+    ## Iteration 700: error is 1.768669 (50 iterations in 0.29 seconds)
+    ## Iteration 750: error is 1.765618 (50 iterations in 0.30 seconds)
+    ## Iteration 800: error is 1.763607 (50 iterations in 0.29 seconds)
+    ## Iteration 850: error is 1.762029 (50 iterations in 0.29 seconds)
+    ## Iteration 900: error is 1.760560 (50 iterations in 0.29 seconds)
+    ## Iteration 950: error is 1.758660 (50 iterations in 0.29 seconds)
+    ## Iteration 1000: error is 1.757319 (50 iterations in 0.28 seconds)
+    ## Iteration 1050: error is 1.755795 (50 iterations in 0.28 seconds)
+    ## Iteration 1100: error is 1.754981 (50 iterations in 0.29 seconds)
+    ## Iteration 1150: error is 1.753828 (50 iterations in 0.29 seconds)
+    ## Iteration 1200: error is 1.752887 (50 iterations in 0.29 seconds)
+    ## Iteration 1250: error is 1.752151 (50 iterations in 0.29 seconds)
+    ## Iteration 1300: error is 1.750677 (50 iterations in 0.29 seconds)
+    ## Iteration 1350: error is 1.749429 (50 iterations in 0.28 seconds)
+    ## Iteration 1400: error is 1.748105 (50 iterations in 0.28 seconds)
+    ## Iteration 1450: error is 1.746872 (50 iterations in 0.28 seconds)
+    ## Iteration 1500: error is 1.746623 (50 iterations in 0.29 seconds)
+    ## Fitting performed in 9.09 seconds.
 
 As we did for the PCA, let's see the head of the two vectors of TSNE.
 
@@ -475,12 +475,12 @@ head(df_out2)
 ```
 
     ##            V1         V2
-    ## 1 -15.5409729 -11.849247
-    ## 2  -8.9482383 -19.745819
-    ## 3   0.4110851  -5.998894
-    ## 4  18.2913398  10.612009
-    ## 5 -18.4599597   9.587622
-    ## 6  -2.5410402  -7.275191
+    ## 1  16.1664878   8.156137
+    ## 2  -2.2904454  18.921592
+    ## 3  -0.5578873   6.329736
+    ## 4 -19.3491355  -9.114801
+    ## 5  18.9316196 -10.199478
+    ## 6   3.2272564   7.747637
 
 When we plot the data values where the axes are V1 and V2, we get the following figure.
 
@@ -596,6 +596,35 @@ kable(d)
 
 Looking at the table, we can tell that K-Means did a fair job in clustering. For instance, 155 out of 215 data points that belong to Real Estate Investment Trusts were put in one cluster. 211 out of 328 of Major Banks were put in one cluster.
 
+Besides the table, we are going to use `rand.index` function from the package `fossil`. This function is used to measure to compare the similarity of two clustering outcomes. Here we will use this function to compare the true labels and the K-means labels. Note that this function does not accept the industry names, so we change them to numerics as follows:
+
+``` r
+library(fossil)
+```
+
+    ## Loading required package: sp
+
+    ## Loading required package: maps
+
+    ## Loading required package: shapefiles
+
+    ## Loading required package: foreign
+
+    ## 
+    ## Attaching package: 'shapefiles'
+
+    ## The following objects are masked from 'package:foreign':
+    ## 
+    ##     read.dbf, write.dbf
+
+``` r
+stocks_daily_return$industry_numeric<-as.factor(stocks_daily_return$industry)
+stocks_daily_return$industry_numeric<-as.numeric(stocks_daily_return$industry_numeric)
+rand.index(stocks_daily_return$industry_numeric,km.out$cluster)
+```
+
+    ## [1] 0.839407
+
 ### Elbow Method
 
 Even though we picked the number of clusters as 11, it is worth trying to see if there is any optimal value for the number of clusters. Below is the code that tries for the number of clusters that starts from 2 and goes up to 15 by increasing the number by 1 at each run.
@@ -621,7 +650,7 @@ plot(1:k.max, wss,
      ylab="Total within-clusters sum of squares")
 ```
 
-![](Clustering_Companies_files/figure-markdown_github/unnamed-chunk-38-1.png)
+![](Clustering_Companies_files/figure-markdown_github/unnamed-chunk-39-1.png)
 
 The total within-cluster sum of square measures the compactness of the clustering and we want it to be as small as possible. For k=11 seems like a good choice for number of clusters so we are not going to try for another k value.
 
@@ -683,7 +712,7 @@ avg_col_dend <- color_branches(avg_dend_obj, k = 11)
 plot(avg_col_dend)
 ```
 
-![](Clustering_Companies_files/figure-markdown_github/unnamed-chunk-41-1.png)
+![](Clustering_Companies_files/figure-markdown_github/unnamed-chunk-42-1.png)
 
 Now, let's compare our hierarchial clustering results and the industries we had in our dataset. We can use `table` to see how well they match.
 
@@ -708,3 +737,14 @@ kable(d)
 | TELECOMMUNICATIONS EQUIPMENT            |   90|    6|   22|    2|    1|    3|    1|    0|    0|    0|    0|
 
 By looking at this table, we can conclude that hierarchial clustering did not perform well, since most of the data points were assigned to one cluster.
+
+Let's use the same function we used for K-means clustering to see its performance.
+
+``` r
+library(fossil)
+rand.index(stocks_daily_return$industry_numeric,cut_avg)
+```
+
+    ## [1] 0.535644
+
+We can conclude that K-means (with rand.index= 0.839407) did perform better than hierarchial clustering (with rand.index= 0.535644).
